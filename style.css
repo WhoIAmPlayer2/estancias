@@ -1,0 +1,149 @@
+/* Estilos básicos para el sitio */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo general de la página en un tono suave */
+}
+
+header {
+    background-color: #fc0; /* Fondo amarillo para el encabezado */
+    color: #222;
+    text-align: center;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#usuario {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 24px;
+}
+
+main {
+    padding: 1rem 8rem;
+}
+
+footer {
+    background-color: #fc0; /* Fondo amarillo para el pie de página */
+    color: #222;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para la barra de búsqueda */
+#buscador {
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+}
+
+#searchInput {
+    text-align: center;
+    width: 100%;
+    background-color: transparent; /* Fondo transparente */
+    padding: 0.5rem;
+    border: none; /* Sin borde por defecto */
+    border-bottom: 2px solid #fc0; /* Solo borde inferior */
+    font-size: 16px;
+    outline: none; /* Elimina el borde al hacer clic */
+}
+
+#searchInput::placeholder {
+    color: #aaa;
+}
+
+/* Opcional: Estilo para cuando el input está enfocado */
+#searchInput:focus {
+    border-bottom: 2px solid #fc0; /* Mantiene el borde inferior al enfocar */
+}
+
+/* Estilos específicos para las secciones */
+#cuatrimestres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cuatrimestre {
+    background-color: #fff; /* Fondo amarillo claro para los cuatrimestres */
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 200px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fc0; /* Borde amarillo más oscuro */
+}
+
+.cuatrimestre:hover {
+    background-color: #fe6; /* Fondo amarillo brillante al pasar el ratón */
+}
+
+.cuatrimestre-activo {
+    background-color: #fe6; /* Fondo amarillo brillante para el cuatrimestre activo */
+}
+
+#tematicas {
+    display: none; /* Ocultar la sección de temáticas inicialmente */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tarjeta {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+    cursor: pointer;
+    flex: 1 1 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para hover */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee; /* Borde gris claro */
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px); /* Efecto de elevar al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+.tarjeta a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: inherit; /* Mantener el color del texto */
+}
+
+.tarjeta .progreso {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: #1d1; /* Color verde para la barra de progreso */
+}
+
+.tarjeta .nombre {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem; /* Aumentar el tamaño del texto */
+    margin-bottom: 0.5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+}

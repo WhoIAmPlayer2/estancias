@@ -1,0 +1,124 @@
+/* Estilos básicos para el sitio */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo general de la página en un tono claro */
+}
+
+header {
+    background-color: #ffcc00; /* Fondo amarillo para el encabezado */
+    color: #333;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.btn {
+    background-color: #0066cc; /* Botón azul */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #004b8d; /* Azul más oscuro al pasar el ratón */
+}
+
+main {
+    padding: 2rem 8rem;
+}
+
+footer {
+    background-color: #ffcc00; /* Fondo amarillo para el pie de página */
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+#informacion-materia {
+    background-color: #ffffff; /* Fondo blanco para la sección de información */
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #dddddd; /* Borde gris claro */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+    margin-bottom: 2rem;
+}
+
+#informacion-materia h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.progreso-container {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0; /* Fondo gris claro para el contenedor de progreso */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 0.5rem; /* Espacio adicional para el texto */
+}
+
+.progreso {
+    height: 10px;
+    background-color: #4caf50; /* Color verde para la barra de progreso */
+    flex-grow: 1; /* Permite que la barra de progreso ocupe el espacio disponible */
+}
+
+.progreso-text {
+    margin-left: 1rem;
+    font-size: 16px;
+    color: #333;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.instructor p {
+    margin: 0.5rem 0;
+}
+
+.instructor a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.instructor a:hover {
+    text-decoration: underline;
+}
